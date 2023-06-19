@@ -1,0 +1,143 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;1,400&family=Exo:ital,wght@0,300;0,700;1,200&family=Indie+Flower&family=Inter:wght@700&family=Kanit:ital,wght@1,300;1,400&display=swap');
+
+@layer components {
+
+    body {
+        @apply font-exo
+    }
+
+    button {
+        @apply font-semibold hover:opacity-70 transition ease-in-out delay-150 font-exo
+    }
+
+    .validation {
+        @apply absolute inset-0 bg-opacity-30 backdrop-blur-sm top-[50%] bottom-[50%]
+    }
+
+    .hero-img {
+        @apply absolute transform -translate-x-1/2
+    }
+
+    .hero-text {
+        @apply z-10 absolute flex flex-col justify-between cursor-pointer hover:scale-75 transition-all
+    }
+
+    .loading{
+        @apply items-center h-full flex flex-row justify-center
+    }
+
+    .not-loading {
+        @apply h-full flex flex-row justify-center
+    }
+
+    .icon {
+        @apply hover:scale-125 transition-all delay-[20] ease-in-out
+    }
+
+    .colorTile-icons {
+        @apply cursor-pointer opacity-80 transition-all delay-200 ease-in-out
+    }
+
+    .form-containers {
+        @apply w-full flex flex-col justify-evenly 
+    }
+
+    .fields {
+        @apply border rounded-xl me-4 ms-4 outline-none indent-3 text-sm
+    }
+
+    .blur-container {
+        @apply fixed inset-0 h-[100%] bg-black bg-opacity-30 backdrop-blur-sm z-50
+    }
+
+    @media (max-width: 640px) {
+        .not-loading {
+          @apply flex-col;
+        }
+    }
+
+    @media (max-width: 640px) {
+        #hero-sm-bottom {
+            height: 40%;
+        }
+    }
+}
+
+@keyframes slide-in {
+    from {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    to {
+      grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.palette-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    transition: grid-template-columns 300ms ease-out;
+}
+
+.palette-container-expanded {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+@media (max-width: 425px) {
+    .palette-container {
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+        transition: grid-template-columns 300ms ease-out;
+    }
+    .palette-container-expanded {
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+#photoSeeker-palette > div:first-child {
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+#photoSeeker-palette > div:last-child {
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+input::file-selector-button {
+    background-color: #0864FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 50%;
+    height: 70%;
+    cursor: pointer;
+    border: 2px solid;
+    position: absolute;
+    top: 20%;
+    right: 23%; 
+    transition: opacity 250ms ease-in-out;   
+}
+
+input::file-selector-button:hover {
+    opacity: 0.7;
+}
+
+input[type="file"] {
+    color: transparent;
+}
+
+.error-message {
+    margin-left: 1rem;
+    color: rgb(241, 92, 92);
+}
+
+
+
+
