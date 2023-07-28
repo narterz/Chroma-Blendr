@@ -1,6 +1,6 @@
 # Chroma-Blendr: Discover and create color palettes for any project
 
-[!Chroma Blendr homepage](cb-home.png)
+![Chroma Blendr homepage](cb-home.png)
 
 ## Dynamically construct your very own color palette using the palette generator or extract color palettes from any images using color seeker
 
@@ -16,7 +16,7 @@ When building your own project, one of the hardest steps is picking your base th
 
 ### Palette generator
 Here you can craft your very own color palette
-![Chroma Blendr palette generator](cb-pg.png)
+![Chroma Blendr palette generator](cb-pg.png.png)
 
 #### Main toolbar
 * Sign in or sign up to get access to the utilities
