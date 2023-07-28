@@ -59,7 +59,7 @@ export const ColorTile: FC<ColorTileProps> = ({ save, copy, lock, hexColor, isLo
                     )}
                 </div>
             </div>
-            <div className="md:h-[30%] sm:h-full w-full flex flex-col items-center sm:justify-evenly md:justify-normal border">
+            <div className="md:h-[30%] sm:h-full w-full flex flex-col items-center sm:justify-evenly md:justify-normal">
                 <h4 className="uppercase font-medium tracking-wide md:text-md sm:text-xsm " style={contrastColor}>{hexColor}</h4>
                 <div className="mt-2 mb-2" />
                 <p className="md:text-xsm" style={contrastColor}>{colorInfo.colorName}</p>
