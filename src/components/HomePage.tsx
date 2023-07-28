@@ -29,7 +29,7 @@ export function HomePage() {
     }, 1500);
 
     return () => clearTimeout(timer);
-  }, [navigatePage])
+  }, [navigatePage, navigate])
 
   return (
     <div className={loading ? 'loading' : 'not-loading'}>
@@ -37,16 +37,16 @@ export function HomePage() {
         <ClipLoader color='#0864FC' loading={loading} size={75} />
       ) : (
         <>
-          <div className='prose flex flex-col h-[80%] justify-evenly xl:justify-around xl:w-[30%] xl:h-[80%] lg:h-[80%] lg:w-[40%] md:w-[55%] md:h-[90%]sm:w-full sm:h-[60%]'>
+          <div className='prose flex flex-col h-[80%] justify-evenly xl:justify-around xl:w-[30%] xl:h-[80%] lg:h-[80%] lg:w-[40%] md:w-[55%] md:h-[90%] sm:w-full sm:h-[60%]'>
             <div className='text-center font-exo'>
               <h1 className='font-bold text-lg xl:leading-[4.5rem] xl:text-xxl'>Discover and create <b className='text-primary'>color palettes</b> for your project</h1>
               <p className='text-subtitle lg:text-xsm sm:text-xsm'>Create the perfect color palette with our color palette generator or photo color seeker</p>
             </div>
             <div className='flex flex-col items-center justify-evenly h-[25%] xl:h-[30%] lg:h-[25%]'>
-              <button className='bg-primary text-white h-[4rem] font-semibold xl:h-[4rem] lg:h-[35%] lg:w-[60%] md:w-[60%] sm:w-[50%] sm:h-[40%]'
+              <button className='bg-primary text-white h-[4rem] font-semibold xl:h-[4rem] lg:h-[35%] lg:w-[60%] md:w-[70%] md:h-[30%] sm:w-[50%] sm:h-[40%]'
                       onClick={() => handleNavigate('/palGenerator')}>Palette Generator
               </button>
-              <button className='bg-secondary h-[4rem] font-semibold xl:h-[4rem] lg:h-[35%] lg:w-[60%] md:w-[60%] sm:w-[50%] sm:h-[40%]'
+              <button className='bg-secondary h-[4rem] font-semibold xl:h-[4rem] lg:h-[35%] lg:w-[60%] md:w-[70%] md:h-[30%] sm:w-[50%] sm:h-[40%]'
                       onClick={() => handleNavigate('/photoColors')}>Photo Color Seeker
               </button>
             </div>

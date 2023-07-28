@@ -22,7 +22,7 @@ To view this project on your own local host
 
 ## This project displays skills in
 
-* HTML, CSS, TypeScript, TailwindCSS
+* HTML, CSS, TypeScript, React, TailwindCSS
 * Form validation
 * Prop drilling
 * Responsive design using tailwind
@@ -44,10 +44,9 @@ To view this project on your own local host
 
 ## known issues
 
-All known issues are slight styling errors that will be implemented soon
-
 * SaveTiles component lacks smooth transitioning while opening and closing
 * Navigation to home page lacks loading screen
+* When a hex color of a tile is less than 6 characters the api will render its name as black. 
 
 
 

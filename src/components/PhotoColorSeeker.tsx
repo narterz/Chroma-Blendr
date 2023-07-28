@@ -4,8 +4,6 @@ import { GetImageData } from '../helpers/GetImageData';
 import { ExtractFreqColors } from '../helpers/ExtractFreqColors';
 import ClipLoader from "react-spinners/ClipLoader";
 import { ToastContainer, toast } from 'react-toastify';
-import { AiOutlineCloudUpload } from 'react-icons/ai'
-
 
 export function PhotoColorSeeker() {
   const [photo, setPhoto] = useState<any>(initalImage);
